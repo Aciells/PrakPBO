@@ -16,7 +16,7 @@ public class codelab {
                 System.out.println("gg");
                 break;
             case 2:
-                System.out.println("nice");
+                System.out.println("aw");
                 break;
             default:
                 System.out.println("salah");
