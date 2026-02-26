@@ -1,17 +1,30 @@
 import java.util.Scanner;
 
 public class codelab {
-    static void main() {
-                Scanner choose = new Scanner(System.in);
-                String pilihan;
+    public static void main(String[] args) {
+        Scanner choose = new Scanner(System.in);
+        int pilihan;
 
-                System.out.println("Welcome to Smart City Management System");
-                System.out.println("1");
-                System.out.println("2");
-                System.out.println("pilih : ");
-                pilihan = choose.nextLine();
+        System.out.println("Welcome to Smart City Management System");
+        System.out.println("1");
+        System.out.println("2");
+        System.out.println("pilih : ");
+        pilihan = choose.nextInt();
 
-                System.out.println("pilihan :" + pilihan);
+        switch (pilihan){
+            case 1:
+                System.out.println("gg");
+                break;
+            case 2:
+                System.out.println("nice");
+                break;
+            default:
+                System.out.println("salah");
+        }
+
+        System.out.println("pilihan :" + pilihan);
+
+
 
     }
 }
