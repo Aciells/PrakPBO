@@ -11,7 +11,7 @@ public class Building {
         this.address = address;
         this.numberFloor = numberFloor;
 
-        displayBuildInfo();
+
 
     }
 
