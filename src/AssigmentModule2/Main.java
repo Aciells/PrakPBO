@@ -1,4 +1,4 @@
-package AssigmentModule1;
+package AssigmentModule2;
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +11,7 @@ public class Main {
             System.out.println("1.Input Building");
             System.out.println("2.Tampilkan Building");
             System.out.println("3.Keluar");
-            System.out.print("Pilih: ");
+            System.out.print("Pilih : ");
             int pilih = scanner.nextInt();
             scanner.nextLine();
 

@@ -1,4 +1,4 @@
-package AssigmentModule1;
+package AssigmentModule2;
 
 public class Building {
 
