@@ -1,4 +1,4 @@
-package Assigment;
+package AssigmentModule1;
 
 public class Building {
 
@@ -11,7 +11,10 @@ public class Building {
         this.address = address;
         this.numberFloor = numberFloor;
 
+    displayBuildInfo();
 
+        System.out.println("Building added succesfully!");
+        System.out.println("---------------------------");
 
     }
 
@@ -20,6 +23,8 @@ public class Building {
         System.out.println("Name of the building: " + name);
         System.out.println("Address of the builing: " + address);
         System.out.println("Number of floors: " + numberFloor);
+        System.out.println("===========================");
+
 
     }
 
