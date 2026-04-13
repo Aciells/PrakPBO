@@ -2,22 +2,24 @@ package AssigmentModule2;
 import java.util.Scanner;
 
 public class Main {
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        Building building = null;
 
         while (true) {
 
+            System.out.println("----Welcome-----");
             System.out.println("1.Input Building");
-            System.out.println("2.Tampilkan Building");
-            System.out.println("3.Keluar");
-            System.out.print("Pilih : ");
+            System.out.println("2.Show Building");
+            System.out.println("3.Exit");
+            System.out.print("Choose : ");
             int pilih = scanner.nextInt();
             scanner.nextLine();
 
             switch (pilih) {
                 case 1:
-                    System.out.print("Enter name Building: ");
+                    System.out.print("\nEnter name Building: ");
                     String name = scanner.nextLine();
                     System.out.print("Enter Address: ");
                     String address = scanner.nextLine();
@@ -25,13 +27,20 @@ public class Main {
                     int numberFloor = scanner.nextInt();
                     scanner.nextLine();
 
-                    Building build1 = new Building(name, address, numberFloor);
+                    building = new Building(name, address, numberFloor);
+
+                    System.out.println("Building added successfully!");
+                    System.out.println("---------------------------\n");
 
                     break;
                 case 2:
-                    System.out.println("===============");
-                    System.out.println("-coming soon!!-");
-                    System.out.println("===============");
+                   if (building != null){
+                       building.displayBuildInfo();
+                   } else {
+                       System.out.println("=============");
+                       System.out.println("Nothing Data!");
+                       System.out.println("=============");
+                   }
                     break;
                 case 3:
                     return;
