@@ -20,15 +20,9 @@ public class Building {
         System.out.println("Name of the building: " + name);
         System.out.println("Address of the builing: " + address);
         System.out.println("Number of floors: " + numberFloor);
-        System.out.println("===========================");
+        System.out.println("===========================\n");
 
 
-    }
-
-    public void AddBuilding(String name, String address, int numberFloor){
-        this.name = name;
-        this.address = address;
-        this.numberFloor = numberFloor;
     }
 
     String getName(){
