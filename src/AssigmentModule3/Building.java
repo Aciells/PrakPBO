@@ -10,35 +10,19 @@ public class Building {
         this.address = address;
         this.numberFloor = numberFloor;
 
-        displayBuildInfo();
-
+        System.out.println("---------------------------");
         System.out.println("Building added succesfully!");
         System.out.println("---------------------------");
 
     }
 
-    public void displayBuildInfo(){
+    public void displayBuildInfo() {
         System.out.println("--- Building Information ---");
-        System.out.println("Name of the building: " + name);
-        System.out.println("Address of the builing: " + address);
-        System.out.println("Number of floors: " + numberFloor);
+        System.out.println("Name of the building: " + this.name);
+        System.out.println("Address of the builing: " + this.address);
+        System.out.println("Number of floors: " + this.numberFloor);
         System.out.println("===========================");
 
 
     }
-
-    String getName(){
-
-        return this.name;
-    }
-
-    String getAddress(){
-
-        return this.address;
-    }
-
-    int getNumberFloor(){
-        return this.numberFloor;
-    }
 }
-

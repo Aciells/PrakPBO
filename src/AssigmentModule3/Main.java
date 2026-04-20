@@ -7,8 +7,10 @@ public class Main {
 
                 Scanner scanner = new Scanner(System.in);
 
-                /*Hospital hospital = new Hospital("rs", "maburai",1,4);
-                Hotel hotel = new Hotel("aston", "tanjung", 4, 2); */
+                Building building = null;
+                Hospital hospital = null;
+                Hotel hotel = null;
+                Restoran restoran = null;
 
                 while (true) {
 
@@ -33,7 +35,7 @@ public class Main {
                             int numberFloor = scanner.nextInt();
                             scanner.nextLine();
 
-                            Building build1 = new Building(name, address, numberFloor);
+                             building = new Building(name, address, numberFloor);
 
                             break;
                         case 2:
@@ -48,19 +50,53 @@ public class Main {
                             int numberOfBeds = scanner.nextInt();
                             scanner.nextLine();
 
-                            Hospital hospital = new Hospital(HospitalName,HospitalAddress, HospitalNumberFloor ,numberOfBeds);
+                            hospital = new Hospital(HospitalName,HospitalAddress, HospitalNumberFloor ,numberOfBeds);
                             break;
                         case 3:
+                            System.out.print("Enter name Hotel: ");
+                            String HotelName = scanner.nextLine();
+                            System.out.print("Enter Address Hotel: ");
+                            String HotelAddress = scanner.nextLine();
+                            System.out.print("Enter Floor Hotel: ");
+                            int HotelNumberFloor = scanner.nextInt();
+                            scanner.nextLine();
+                            System.out.print("Enter Rooms: ");
+                            int numberOfRooms = scanner.nextInt();
+                            scanner.nextLine();
+
+                            hotel = new Hotel(HotelName, HotelAddress, HotelNumberFloor,numberOfRooms);
                             break;
                         case 4:
-                            System.out.println("===============");
-                            System.out.println("-coming soon!!-");
-                            System.out.println("===============");
+                            System.out.print("Enter name Restoran: ");
+                            String RestoranName = scanner.nextLine();
+                            System.out.print("Enter Address Restoran: ");
+                            String RestoranAddress = scanner.nextLine();
+                            System.out.print("Enter Floor Restoran: ");
+                            int RestoranNumberFloor = scanner.nextInt();
+                            scanner.nextLine();
+                            System.out.print("Enter Tables: ");
+                            int RestoranNumberOfTables = scanner.nextInt();
+                            scanner.nextLine();
+
+                            restoran = new Restoran(RestoranName, RestoranAddress, RestoranNumberFloor, RestoranNumberOfTables);
                             break;
                         case 5:
+                            if(building != null){
+                                building.displayBuildInfo();
+                            }
+                            if(hospital != null){
+                                hospital.displayBuildInfo();
+                            }
+                            if(hotel != null){
+                                hotel.displayBuildInfo();
+                            }
+                            if(restoran != null){
+                                restoran.displayBuildInfo();
+                            }
+
                             break;
                         case 6:
-                            System.out.println("Anda keluar!!");
+                            System.out.println("Anda Exit!!");
                             return;
                         default:
                             System.out.println("pilihan tidak valid");
