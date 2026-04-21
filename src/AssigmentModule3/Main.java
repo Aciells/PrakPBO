@@ -93,7 +93,6 @@ public class Main {
                             if(restoran != null){
                                 restoran.displayBuildInfo();
                             }
-
                             break;
                         case 6:
                             System.out.println("Anda Exit!!");

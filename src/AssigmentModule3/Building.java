@@ -1,9 +1,9 @@
 package AssigmentModule3;
 
 public class Building {
-    String name;
-    String address;
-    int numberFloor;
+    private String name;
+    private String address;
+    private int numberFloor;
 
     public Building(String name, String address, int numberFloor) {
         this.name = name;
@@ -21,8 +21,20 @@ public class Building {
         System.out.println("Name of the building: " + this.name);
         System.out.println("Address of the builing: " + this.address);
         System.out.println("Number of floors: " + this.numberFloor);
-        System.out.println("===========================");
 
 
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public int getNumberFloor() {
+        return numberFloor;
     }
 }
